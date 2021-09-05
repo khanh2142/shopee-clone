@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --row-width : -2px;
+    --col-padding : 2px;
+    --primary-color : #fe6233;
+    --white-color : #fffffe;
+    --white-color-2: #ffffff;
+    --light-orange : #ffeada;
+    --black-color : #343434;
+
+    --font-size-small : 0.8rem;
+    --font-size-normal : 1rem;
+    --font-size-big : 2rem;
+}
+
+/* .mt10 {
+    margin-top: 10px;
+} */
+
+.bg-cl {
+    background-color: var(--primary-color);
+}
+
+.header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.home-logo {
+    fill: var(--primary-color);
+}
+
+.banner__logo-svg{
+    width: 124px;
+}
+
+.logo-content {
+    font-size: var(--font-size-big);
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.help {
+    color : var(--primary-color);
+    font-size: var(--font-size-normal);
+}
+
+.main {
+    display: flex;
+    width: 100%;
+}
+
+.banner {
+    background-image: url(https://cf.shopee.vn/file/be50c95ee8da6c997d171fc7e7e36712);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 37.5rem;
+    width: 60rem;
+}
+
+.form-control {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 0 3px 10px 0 rgb(0 0 0 / 14%);
+    border-radius: .25rem;
+    overflow: hidden;
+    padding: 20px;
+    width: 450px;
+}
+
+.form input {
+    margin-top: 20px;
+    padding: 10px;
+    opacity: 0.8;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.form button {
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f3836c;
+    border-radius: 2px;
+    border: none;
+    text-transform: uppercase;
+    color : var(--white-color);
+    font-size: 1rem;
+}
+
+.form button:active {
+    opacity: 0.5;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.user-problem {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-problem a {
+    font-size: 0.8rem;
+    color : #1877f2;
+    font-weight: 500;
+}
+
+.form-space {
+    user-select: none;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-space p {
+    text-transform: uppercase;
+    padding: 0 20px;
+    color : rgba(0, 0, 0, 0.2);
+}
+
+.form-space span {
+    width: 42%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.social-login {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-login a {
+    display: flex;
+    align-items: center;
+    background-color: #1877f2;
+    height: 40px;
+    width: 30%;
+    border-radius: 2px;
+}
+
+.social-login a:last-child {
+    background-color: #000000;
+}
+
+.social-login a:nth-child(2) {
+    background-color: #0F9D58;
+}
+ 
+.social-login a:nth-child(2) i {
+    padding: 1px;
+    color :   #DB4437;
+}
+
+
+.social-login a i{
+    width: 30%;
+    font-size: 1.5rem;
+    text-align: center;
+    color : var(--white-color);
+}
+
+.social-login a p {
+    width: 70%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    color : var(--white-color);
+}
+
+.change-form {
+    padding: 50px 0;
+    display: flex;
+    align-self: center;
+}
+
+
+.change-form p,a {
+    font-size: 0.9rem;
+}
+
+.change-form p {
+    color :rgba(0, 0, 0, 0.6);
+}
+
+.change-form a {
+    color : var(--primary-color);
+    margin-left: 5px;
+}
+
+/* change form */
+
+.form-signin {
+    display: none;
+}
+
+.form-signin button {
+    margin-top: 30px;
+}
+
+.form-signin .form-space {
+    margin-top: 20px;
+}
+
+.form-signin .social-login {
+    margin-top: 20px;
+}
+
+.policy {
+    text-align: center;
+    padding: 20px 50px 0px 50px;
+    font-size: 0.8rem;
+}
+
+.policy p {
+    font-size: 0.8rem;
+}
+
+.policy a {
+    font-size: 0.8rem;
+    color : var(--primary-color);
+}
+
+.form-signin .change-form {
+    padding : 20px 0;
+}
