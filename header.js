@@ -12,7 +12,7 @@ openLoginMobile.addEventListener('click', () => {
 });
 
 openSigninMobile.addEventListener('click', () => {
-    window.location = 'login.html';
+    window.location = 'signin.html';
 });
 
 

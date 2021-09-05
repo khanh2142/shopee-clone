@@ -224,9 +224,9 @@
 
 /* change form */
 
-.form-signin {
+/* .form-signin {
     display: none;
-}
+} */
 
 .form-signin button {
     margin-top: 30px;
@@ -257,4 +257,17 @@
 
 .form-signin .change-form {
     padding : 20px 0;
+}
+
+@media (max-width : 740px){
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        background-color: white !important;
+    }
 }
