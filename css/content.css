@@ -45,6 +45,7 @@
     margin-top: 10px;
     background-color: var(--white-color);
     height: 108px;
+    width: 100%;
     display: flex;
     justify-content: space-around;
 
@@ -82,7 +83,7 @@
     -webkit-line-clamp: 2;
     font-size: .8125rem;
     line-height: 0.875rem;
-    max-width: 150px;
+    max-width: 80px;
     margin-bottom: 8px;
     word-wrap: break-word;
     overflow: hidden;
@@ -90,4 +91,18 @@
     color: var(--black-color);
     letter-spacing: 0;
     text-align: center;
+}
+
+
+/* ------------------- BANNER ------------------------ */
+
+.adv-banner-fullscreen {
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    height: 110px;
+}
+
+.adv-banner-fullscreen img {
+    width: 100%;
 }
