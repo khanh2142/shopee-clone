@@ -8,15 +8,21 @@
     --row-width : -2px;
     --col-padding : 2px;
     --primary-color : #fe6233;
+    --white-color : #fffffe;
+    --white-color-2: #ffffff;
+    --light-orange : #ffeada;
+    --black-color : #343434;
 }
 
 .content {
    padding-top: 160px;
 } 
 
+/* ----------------- ADVERTISEMENT --------------- */
+
 .adv-link {
     margin-left: 0.125rem;
-    width: 98%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -32,3 +38,56 @@
     height: 98%;
 }
 
+/* -------------------- ATTRACTIVE --------------------- */
+
+.attractive {
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: var(--white-color);
+    height: 108px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.attractive-item {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 9%;
+    overflow: hidden;
+}
+
+.attractive-logo {
+    height: 70px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.attractive-img {
+    height: 45px;
+    width: 100%;
+    background-image: url("https://cf.shopee.vn/file/b3535d7e56c58c4ebe9a87672d38cc5e_xhdpi");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.attractive-content {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: .8125rem;
+    line-height: 0.875rem;
+    max-width: 150px;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+    overflow: hidden;
+
+    color: var(--black-color);
+    letter-spacing: 0;
+    text-align: center;
+}
