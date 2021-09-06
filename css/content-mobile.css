@@ -19,4 +19,8 @@
         margin-left: 20px;
         scroll-snap-align: center;
     }
+
+    .attractive-item:last-child {
+        margin-right: 20px;
+    }
 }
