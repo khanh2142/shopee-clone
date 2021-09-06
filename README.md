@@ -1,2 +1,1 @@
-# shopee-clone
-This is my exercise. I'm going to train more...
+Hello World :=)
