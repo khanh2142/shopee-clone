@@ -2,4 +2,12 @@
     .content {
         padding-top: 5px;
     }
+
+    .attractive  {
+        width: auto;
+    }
+
+    .attractive-item {
+        width: 20%;
+    }
 }
