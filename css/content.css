@@ -45,9 +45,11 @@
     margin-top: 10px;
     background-color: var(--white-color);
     height: 108px;
-    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
 }
 
 .attractive-item {
@@ -55,8 +57,7 @@
     flex-direction: column;
     /* justify-content: space-between; */
     align-items: center;
-    width: 9%;
-    overflow: hidden;
+    scroll-snap-align: start;
 }
 
 .attractive-logo {

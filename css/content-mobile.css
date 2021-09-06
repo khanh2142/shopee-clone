@@ -3,11 +3,20 @@
         padding-top: 5px;
     }
 
-    .attractive  {
-        width: auto;
+    .attractive {
+        gap : 1rem;
+        justify-content: unset;
+        scroll-padding-left: 5px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .attractive::-webkit-scrollbar {
+        display: none;
     }
 
     .attractive-item {
-        width: 20%;
+        margin-left: 20px;
+        scroll-snap-align: center;
     }
 }
