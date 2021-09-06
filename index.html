@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/content.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/carousel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body>
+<body style="background-color: rgba(0, 0, 100, 0.1);">
     <div class="grid header">
         <div class="row grid wide">
             <div class="col l-12 m-12 c-12">
@@ -155,17 +156,60 @@
     </div>
 
     <div class="grid wide content">
-        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam commodo lacus id lorem vulputate pharetra. Phasellus vel elit metus. Aenean dapibus quam ultricies eleifend bibendum. Phasellus quis massa vestibulum, dignissim nisl et, tempor odio. Maecenas ornare velit in justo ullamcorper, ut volutpat leo congue. Aliquam condimentum orci non enim efficitur porttitor. Sed commodo, urna mollis gravida eleifend, ipsum mi facilisis leo, a molestie nisl tortor non sem. Donec lectus justo, dictum non nulla ullamcorper, sodales congue diam. Sed sed elit malesuada, facilisis ex id, commodo felis. Aliquam scelerisque nisl in metus dictum efficitur. Mauris leo elit, iaculis eget posuere in, molestie non metus. Phasellus facilisis pretium faucibus. Maecenas consequat mi arcu. Nunc id egestas quam, et congue enim. Curabitur congue, neque at consequat dapibus, tortor lorem posuere purus, at auctor lacus diam id massa.
+        
+        <div class="row">
 
-            Pellentesque dictum velit non ex fringilla sagittis. Vivamus nunc dolor, pulvinar non nisl ac, viverra gravida arcu. Vivamus imperdiet semper tellus quis blandit. Etiam eu lobortis metus. Curabitur at odio tincidunt, laoreet lacus non, efficitur nunc. Donec gravida eget lacus ac venenatis. Proin pellentesque leo ac tempus posuere. Donec pulvinar lacus ex, ac vehicula mauris vehicula eu. Vestibulum volutpat in eros ut lobortis. Sed lobortis, est nec varius scelerisque, felis magna malesuada libero, nec viverra arcu dolor vel risus. Mauris vitae blandit velit. Ut a nisl risus. Integer sollicitudin est est, ac accumsan est eleifend eget. Phasellus nec feugiat justo, eget dignissim elit.
-            
-            Nulla fermentum massa tortor, sit amet tempor dui venenatis nec. Pellentesque dapibus neque at aliquam cursus. Cras sagittis felis et est bibendum porttitor. Aenean tincidunt id metus non faucibus. Sed ultricies aliquam lacinia. Nunc enim orci, cursus sed convallis elementum, faucibus sit amet arcu. Mauris ut tortor sed tellus finibus congue. Nam vehicula turpis vel orci interdum malesuada. Aliquam non efficitur augue. Vivamus quis augue a justo ullamcorper pellentesque. Donec vulputate orci est, a faucibus velit porta non. Aenean nec quam in nulla volutpat tristique.
-            
-            Nunc eleifend erat id arcu volutpat viverra. Duis eget lacinia nisi, in porta metus. Fusce sed orci nibh. Etiam venenatis lacinia ex id congue. Nunc a varius lectus. Etiam pharetra magna et sagittis sodales. Proin sapien nisl, pharetra id pellentesque vitae, pellentesque quis ante. Proin elementum eros vel mauris blandit condimentum. Donec a tristique mi, in euismod arcu. Duis iaculis, sem eget lobortis elementum, magna justo consequat neque, nec convallis sem ligula nec justo. Sed eget tincidunt elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque tellus augue, bibendum non odio nec, dignissim viverra magna. Proin accumsan luctus massa eget pulvinar. Proin at risus orci. Integer et dapibus sem.
-            
-            Duis tincidunt dolor eget tortor sodales, quis luctus mi egestas. Aliquam erat volutpat. Donec convallis elit a nisl scelerisque molestie. Mauris scelerisque id ipsum ornare scelerisque. Donec ac molestie dolor, sit amet fringilla nisi. Aliquam dignissim vel libero id iaculis. Cras tristique pretium dolor, id congue enim venenatis eu. Nam eleifend quam non sapien euismod, dictum bibendum magna eleifend.</h1>
+            <div class="col l-8 m-8 c-12">
+
+                <div class="slideshow-container">
+
+                    <a class="mySlides fade" href="#">
+                      <img src="https://cf.shopee.vn/file/5d24f9f898eead243a20f9caeb96613e_xxhdpi" style="width:100%" class="img-carousel">
+                    </a>
+                    
+                    <a class="mySlides fade" href="#">
+                      <img src="https://cf.shopee.vn/file/69a3a992d234355a8d7b60603d5715bb_xxhdpi" style="width:100%" class="img-carousel">
+                    </a>
+                    
+                    <a class="mySlides fade" href="#">
+                      <img src="https://cf.shopee.vn/file/ef41c2e1adffc971b1a079b2e530bfc2_xxhdpi" style="width:100%" class="img-carousel">
+                    </a>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div style="text-align:center" class="dot-carousel">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                      </div>
+                    
+                </div>
+                    
+            </div>
+
+            <div class="col l-4 m-4 c-0">
+
+                <div class="row">
+                    <a href="#" class="adv-link">
+                        <img src="https://cf.shopee.vn/file/4e0491c7820fa007b29851c624e766eb_xhdpi" alt="">
+                    </a>
+                </div>
+
+                <div class="row">
+                    <a href="#" class="adv-link adv-link-last">
+                        <img src="https://cf.shopee.vn/file/732564297c5da0ed68285b63248ddc68_xhdpi" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
     </div>
 
     <script src="./js/header.js" type="module"></script>
+    <script src="./js/carousel.js"></script>
 </body>
 </html>

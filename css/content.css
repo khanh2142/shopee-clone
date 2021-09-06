@@ -11,5 +11,24 @@
 }
 
 .content {
-   padding-top: 120px;
+   padding-top: 160px;
 } 
+
+.adv-link {
+    margin-left: 0.125rem;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+}
+
+.adv-link-last {
+    margin-top: 2px;
+    justify-content: flex-end;
+}
+
+.adv-link img {
+    width: 100%;
+    border-radius: 5px;
+    height: 98%;
+}
+
