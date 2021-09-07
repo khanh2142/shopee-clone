@@ -16,3 +16,6 @@ const arrativeItems = document.querySelectorAll('.attractive-img');
 arrativeItems.forEach((item , index )=> {
     item.style.backgroundImage = "url(" + attractiveImgs[index] +")";
 });
+
+
+

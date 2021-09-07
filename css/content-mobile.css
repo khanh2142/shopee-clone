@@ -35,4 +35,12 @@
     .sp-prev {
         display: none !important;
     }
+
+    .category-prev {
+        display: none !important;
+    }
+
+    .category-next {
+        display: none !important;
+    }
 }

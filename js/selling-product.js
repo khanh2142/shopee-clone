@@ -30,7 +30,7 @@ spContainer.addEventListener('scroll',() => {
             prevProduct.style.display = "block";
     }
     
-    if ((spContainer.scrollLeft) == spContainer.scrollWidth-spContainer.clientWidth){
+    if ((Math.round(spContainer.scrollLeft)) == spContainer.scrollWidth-spContainer.clientWidth){
         nextProduct.style.display = "none";
     }
 });

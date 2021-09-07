@@ -238,3 +238,115 @@
     transform: scale(1.2);
     transition: 0.1s;
 }
+
+/* ----------------- CATEGORY -------------------- */
+
+.category {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.category-title {
+    padding: 20px 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+    opacity: 0.5;
+}
+
+.category-menu {
+    width: 100%;
+    position: relative;
+    height: 300px;
+}
+
+.category-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    scroll-behavior: smooth;
+}
+
+.category-list::-webkit-scrollbar {
+    display: none;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    max-width: 150px;
+    border : 1px solid rgba(0, 0, 0, 0.1);
+    align-items: center;
+    height: 150px;
+    scroll-snap-align: start;
+}
+
+.category-item img {
+    width: 83px;
+    height: 88px;
+}
+
+.category-item p {
+    padding: 0 5px;
+    width: 120px;
+    color: rgba(0,0,0,.8);
+    font-size: .875rem;
+
+    line-height: 1.25rem;
+    margin-bottom: .625rem;
+    word-break: break-word;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.category-item:hover {
+    opacity: 0.7;
+    transition: 0.1s;
+}
+
+.category-item:first-child {
+    border-left-width: 0px;
+}
+
+.category-item:last-child {
+    border-right-width: 0px;
+}
+
+.category-prev {
+    position: absolute;
+    top : calc(50% - 1rem);
+    left: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.category-prev i {
+    font-size: 2rem;
+    color : #000;
+    opacity: 0.6;
+}
+
+.category-next {
+    position: absolute;
+    top : calc(50% - 1rem);
+    right: 5px;
+    cursor: pointer;
+}
+
+.category-next i {
+    font-size: 2rem;
+    color : #000;
+    opacity: 0.6;
+}
