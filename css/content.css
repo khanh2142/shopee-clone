@@ -138,6 +138,8 @@
     width: 100%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+
+    z-index: 1;
 }
 
 .sp-title {
@@ -170,6 +172,7 @@
     scrollbar-width: none;
 
     scroll-behavior: smooth;
+
 }
 
 .sp-item {
@@ -210,6 +213,7 @@
     right: 5px;
     top: calc(50% - 1rem);
     cursor: pointer;
+
 }
 
 .sp-next i {
@@ -586,4 +590,96 @@
 
 .sk-3 {
     background-image: url("https://cf.shopee.vn/file/6274f96d76c4d7cd66dd29651633ef72");
+}
+
+/* ------------- SHOPEE MALL --------------------- */
+
+.shopee-mall {
+    width: 100%;
+    background-color: #fff;
+}
+
+.sm-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sm-logo {
+    display: flex;
+}
+
+.sm-logo a {
+    position: relative;
+    color : #d1061f;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-right: 10px;
+    pointer-events: none;
+}
+
+.sm-logo a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.2;
+}
+
+.sm-description {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.sm-description p {
+    margin-right: 10px;
+    text-transform: capitalize;
+    color : #000;
+    font-size: 0.9rem;
+}
+
+.sm-description p i {
+    font-size: 1rem;
+    color :#d1061f;
+    margin-right: 5px;
+}
+
+.sm-more {
+    color : #d1061f;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+.sm-more i {
+    margin-left: 5px;
+    font-size: 1rem;
+    color :inherit;
+}
+
+.sm-container {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+}
+
+.sm-container::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    opacity: 0.2;
+}
+
+.sm-carousel {
+    width: 100%;
+    height: 452px;
+    border-style: dashed;
 }

@@ -52,4 +52,12 @@
         display: none !important;
     }
 
+    .sm-description {
+        display: none;
+    }
+
+    .sm-logo a::after {
+        display: none;
+    }
+
 }
