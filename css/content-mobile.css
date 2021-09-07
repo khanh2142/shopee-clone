@@ -43,4 +43,13 @@
     .category-next {
         display: none !important;
     }
+
+    .flashsale-prev {
+        display: none !important;
+    }
+
+    .flashsale-next {
+        display: none !important;
+    }
+
 }
