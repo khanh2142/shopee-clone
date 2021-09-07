@@ -3,8 +3,8 @@ let cdMinute = document.querySelector('.fc-minute');
 let cdSecond = document.querySelector('.fc-second');
 
 let hour = 0;
-let minute = 10;
-let second = 10;
+let minute = 1;
+let second = 0;
 
 let countdown = setInterval( () => {
     second--;
@@ -21,7 +21,9 @@ let countdown = setInterval( () => {
             }
             else
             if (hour == 0 && second ==0){
-               clearCountdown();
+               refreshFlashSale();
+                minute = 1;
+                second = 0;
             }
         }
     }
@@ -31,8 +33,5 @@ let countdown = setInterval( () => {
     cdSecond.textContent = second;
 },1000);
 
-function clearCountdown() {
-    clearInterval(countdown);
-}
 
 

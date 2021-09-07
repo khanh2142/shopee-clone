@@ -16,6 +16,7 @@
 
 .content {
    padding-top: 160px;
+   overflow-x: hidden;
 } 
 
 /* ----------------- ADVERTISEMENT --------------- */
@@ -560,4 +561,29 @@
 .flashsale-next:hover,.flashsale-prev:hover {
     transform: scale(1.2);
     transition: 0.1s;
+}
+
+/* ----------------------- SKINNY BANNER  ------------------------------ */
+
+.skinny-banner {
+    height: 110px;
+    width: 100%;
+    display: flex;
+}
+
+.sk-container {
+    display: block;
+    background-image: url("https://cf.shopee.vn/file/062d264dff8b906c1c6e10ef9f305134");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(100% / 3);
+}
+
+.sk-2 {
+    background-image: url("https://cf.shopee.vn/file/2199658ec0e2e2585b63eb2ca5d207f0");
+}
+
+.sk-3 {
+    background-image: url("https://cf.shopee.vn/file/6274f96d76c4d7cd66dd29651633ef72");
 }
