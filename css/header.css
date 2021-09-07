@@ -44,6 +44,7 @@
     left: 0;
     background-color: var(--primary-color);
     height: 120px;
+    z-index: 9999;
 }
 
 .header__wrapper-content {

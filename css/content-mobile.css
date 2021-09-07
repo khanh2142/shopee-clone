@@ -24,4 +24,15 @@
         margin-right: 20px;
     }
 
+    .adv-banner-fullscreen {
+        max-height: 50px;
+    }
+
+    .sp-next {
+        display: none;
+    }
+
+    .sp-prev {
+        display: none;
+    }
 }

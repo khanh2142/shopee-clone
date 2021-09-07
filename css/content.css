@@ -97,12 +97,144 @@
 /* ------------------- BANNER ------------------------ */
 
 .adv-banner-fullscreen {
-    display: block;
+    display: flex;
     background-color: transparent;
     width: 100%;
     height: 110px;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .adv-banner-fullscreen img {
     width: 100%;
+}
+
+/* ------------------ SELLING PRODCUT -------------------- */
+
+.selling-product {
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sp-img {
+    width: 100%;
+}
+
+.sp-img img {
+    width: 100%;
+    height: 100px;
+}
+
+.sp-container {
+    position: relative;
+    background-color: #ffeada;
+    height: 300px;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.sp-title {
+    padding: 0 1%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color : rgb(208, 1, 27);
+}
+
+.sp-content {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color : inherit;
+}
+
+.sp-more {
+    color : inherit;
+}
+
+.sp-product {
+    margin-top: 20px;
+    display: flex;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    scroll-behavior: smooth;
+}
+
+.sp-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    max-width: 160px;
+    width: 160px;
+    color : rgb(208, 1, 27);
+    padding-bottom: 10px;
+    margin-right: 2px;
+    border-radius: 5px;
+
+    scroll-snap-align: start;
+}
+
+.sp-item-img {
+    background-image: url("https://cf.shopee.vn/file/fff81458b7029b2aa9fabc8f7c9811f0_tn");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 160px;
+    width: 160px;
+    background-position: 50%;
+    border-radius: 5px;
+}
+
+.sp-item-price {
+    text-align: center;
+    color : inherit;
+}
+
+.sp-product::-webkit-scrollbar {
+    display: none;
+}
+
+.sp-next {
+    position: absolute;
+    right: 5px;
+    top: calc(50% - 1rem);
+    cursor: pointer;
+}
+
+.sp-next i {
+    color : rgb(208, 1, 27);
+    font-size: 2rem;
+}
+
+.sp-next i:active {
+    transform: scale(1.2);
+    transition: 0.1s;
+}
+
+.sp-prev {
+    position: absolute;
+    left: 5px;
+    top: calc(50% - 1rem);
+    cursor: pointer;
+    display: none;
+}
+
+.sp-prev i {
+    color : rgb(208, 1, 27);
+    font-size: 2rem;
+}
+
+.sp-prev i:active {
+    transform: scale(1.2);
+    transition: 0.1s;
 }
