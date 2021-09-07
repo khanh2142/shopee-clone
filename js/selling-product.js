@@ -6,7 +6,6 @@ nextProduct.addEventListener('click', () => {
 
     spContainer.scrollBy(100,0);
 
-    scrollSp();
 
     prevProduct.style.display = "block";
 });
@@ -14,23 +13,28 @@ nextProduct.addEventListener('click', () => {
 prevProduct.addEventListener('click', () => {
     spContainer.scrollBy(-100,0);
 
-    scrollSp();
 
     nextProduct.style.display = "block";
 
 });
 
 
-function scrollSp() {
+spContainer.addEventListener('scroll',() => {
 
-    if (Math.floor(spContainer.scrollLeft / 10) >= 80){
+    if ((spContainer.scrollLeft) == 0){
+        prevProduct.style.display = "none";
+        nextProduct.style.display = "block";
+    }
+
+    if ((spContainer.scrollLeft) > 0){
+            prevProduct.style.display = "block";
+    }
+    
+    if ((spContainer.scrollLeft) == spContainer.scrollWidth-spContainer.clientWidth){
         nextProduct.style.display = "none";
     }
+});
 
-    if (Math.floor(spContainer.scrollLeft / 10) <= 16){
-        prevProduct.style.display = "none";
-    }
-}
 
 function random(a,b){
     return Math.floor(Math.random() * (a-b+1)) + b;
