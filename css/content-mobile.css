@@ -29,10 +29,10 @@
     }
 
     .sp-next {
-        display: none;
+        display: none !important;
     }
 
     .sp-prev {
-        display: none;
+        display: none !important;
     }
 }
