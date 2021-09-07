@@ -350,3 +350,73 @@
     color : #000;
     opacity: 0.6;
 }
+
+/* ----------------- FLASH SALE ---------------- */
+
+.flashsale {
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+}
+
+.flashsale-header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+.flashsale-title {
+    display: flex;
+    height: 100%;
+}
+
+.flashsale-logo {
+    background-image: url("../images/flashsale.png");
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.flashsale-countdown {
+    margin-left: 5px;
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fc-hour {
+    background-color: #000;
+    width: 25px;
+    color : #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.fc-minute {
+    background-color: #000;
+    width: 25px;
+    color : #fff; 
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.fc-second {
+    background-color: #000;
+    width: 25px;
+    color : #fff;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+
+.flashsale-more {
+    color :#ee4d2d;
+    text-align: center;
+    text-transform :capitalize;
+    font-size: 0.8rem;
+}
