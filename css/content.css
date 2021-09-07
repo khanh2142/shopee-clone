@@ -420,3 +420,107 @@
     text-transform :capitalize;
     font-size: 0.8rem;
 }
+
+.flashsale-container {
+    margin-top: 10px;
+    display: flex;
+    height: 220px;
+    padding-left: 10px;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    scroll-behavior: smooth;
+}
+
+.flashsale-item {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 200px;
+    align-items: center;
+    color : #ee4d2d;
+    padding-bottom: 1px;
+    position: relative;
+    border : 1px solid rgba(0,0,0,.1);
+
+    scroll-snap-align: start;
+}
+
+.flashsale-product {
+    background-image: url("https://cf.shopee.vn/file/194646e5b88eb909e75478715291aa79_tn");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 173px;
+    height: 173px;
+    background-position: 50%;
+}
+
+.flashsale-price {
+    text-align: center;
+    color : inherit;
+    font-size: 1.2rem;
+}
+
+.flashsale-quantity {
+    width: 90%;
+    height: 20px;
+    background-color: #ffbda6;
+    border-radius: 20px;
+    position : relative;
+}
+
+.flashsale-quantity p {
+    position: relative;
+    color : #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    z-index: 10;
+}
+
+.flashsale-bar {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #ee4d2d;
+    top : 0;
+    left: 0;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.flashsale-discout {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #ffd839;
+    top : 0;
+    right: 0;
+    text-align: center;
+}
+
+.flashsale-discout span {
+    font-size: 1rem;
+    color : #fff;
+}
+
+.flashsale-discout p {
+    font-size: 1rem;
+    color : #ee4d2d; 
+}
+
+.flashsale-discout::after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    left: 0px;
+    bottom: -4px;
+    position: absolute;
+    border-color: transparent rgba(255, 212, 36, 0.9);
+    border-style: solid;
+    border-width: 0px 25px 4px;
+}
