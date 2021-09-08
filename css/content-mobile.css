@@ -84,4 +84,8 @@
     .trend-prev,.trend-next {
         display: none !important;
     }
+
+    .top-next,.top-prev {
+        display: none !important;
+    }
 }
