@@ -4,6 +4,12 @@ const dots = document.querySelectorAll('.dot');
 const next = document.querySelector('.next');
 const prev = document.querySelector('.prev');
 
+const smSlides = document.querySelectorAll('.sm-slide');
+const smDots = document.querySelectorAll('.sm-dot');
+const smNext = document.querySelector('.sm-next');
+const smPrev = document.querySelector('.sm-prev');
+let smIndex = 0;
+
 
 
 next.addEventListener('click',() => {
@@ -27,7 +33,6 @@ next.addEventListener('click',() => {
 
 prev.addEventListener('click',() => {
 
-  console.log(slideIndex);
 
   (slideIndex == 0) ? slideIndex = slides.length-1 : --slideIndex;
 
@@ -88,3 +93,84 @@ function slideShow() {
 slideShow();
 
 
+/* ---------------------------------- */
+
+smNext.addEventListener('click',() => {
+
+  if (smIndex == smSlides.length-1) smIndex = 0;else smIndex += 1;
+
+  smSlides.forEach(slide => {
+    slide.classList.remove('active');
+  });
+
+  smSlides[smIndex].classList.add('active');
+
+  smDots.forEach(dot => {
+    dot.classList.remove('active');
+  });
+
+  smDots[smIndex].classList.add('active');
+
+});
+
+
+smPrev.addEventListener('click',() => {
+
+
+  (smIndex == 0) ? smIndex = smSlides.length-1 : --smIndex;
+
+  smSlides.forEach(slide => {
+    slide.classList.remove('active');
+  });
+
+  smSlides[smIndex].classList.add('active');
+
+  smDots.forEach(dot => {
+    dot.classList.remove('active');
+  });
+
+  smDots[smIndex].classList.add('active');
+
+});
+
+smDots.forEach((dot,index )=> {
+  dot.addEventListener('click',() => {
+    smIndex = index;
+
+    smSlides.forEach(slide => {
+      slide.classList.remove('active');
+    });
+  
+    smSlides[smIndex].classList.add('active');
+  
+    smDots.forEach(dot => {
+      dot.classList.remove('active');
+    });
+  
+    smDots[smIndex].classList.add('active');
+  });
+});
+
+
+function smSlideshow() {
+
+  smSlides.forEach(slide => {
+    slide.classList.remove('active');
+  });
+
+  smSlides[smIndex].classList.add('active');
+
+  smDots.forEach(dot => {
+    dot.classList.remove('active');
+  });
+
+  smDots[smIndex].classList.add('active');
+
+  smIndex++;
+  if (smIndex >= smSlides.length) smIndex = 0; 
+
+  setTimeout(smSlideshow,2000);
+  
+};
+
+smSlideshow();

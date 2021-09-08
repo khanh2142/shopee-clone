@@ -663,6 +663,7 @@
 
 .sm-container {
     position: relative;
+    display: flex;
     width: 100%;
     padding: 10px;
 }
@@ -680,6 +681,117 @@
 
 .sm-carousel {
     width: 100%;
-    height: 452px;
-    border-style: dashed;
+    height: 100%;
+}
+
+.sm-product {
+    height: 100%;   
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.sm-list {
+    height: 50%;
+    display: flex;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    align-items: center;
+}
+
+.sm-list::-webkit-scrollbar {
+    display: none;
+}
+
+.smp-prev {
+    position: absolute;
+    left: 5px;
+    top : calc(50% - 1rem);
+    cursor: pointer;
+}
+
+.smp-prev i {
+    font-size: 2rem;
+    opacity: 0.5;
+}
+
+.smp-next {
+    position: absolute;
+    top : calc(50% - 1rem);
+    right: 5px;
+    cursor: pointer;
+}
+
+.smp-next i {
+    font-size: 2rem;
+    opacity: 0.5;
+}
+
+.smp-next:hover,.smp-prev:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+.sm-item {
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 216px;
+    width: 201px;
+    border: 1px solid rgba(0,0,0,0.1);
+    position: relative;
+
+    scroll-snap-align: start;
+}
+
+.sm-viewall {
+    border: none;
+}
+
+.sm-item h3 {
+    width: 201px;
+    text-align: center;
+    color : #d1061f;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.sm-item h3 i {
+    margin-left: 5px;
+    font-size: 1.2rem;
+}
+
+.sm-image {
+    height: 100%;
+    width: 201px;
+    background-position: 50%;
+    background-image: url("https://cf.shopee.vn/file/6bb0d452358db2c4c147cf0206dc4344_xhdpi");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sm-content {
+    position: absolute;
+    padding: 0px 10px;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    bottom: 5px;
+    height: 27px;
+    color : #d51d34;
+    font-size: 18px;
+    font-weight: 500;
+
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    word-wrap: break-word;
+    overflow: hidden;
 }

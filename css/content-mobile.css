@@ -60,4 +60,24 @@
         display: none;
     }
 
+
+    .skinny-banner {
+        max-height: 50px;
+    }
+
+    .sm-container {
+        flex-direction: column;
+    }
+
+    .sm-product {
+        margin-top: 10px;
+    }
+
+    .smp-prev {
+        display: none !important;
+    }
+
+    .smp-next {
+        display: none !important;
+    }
 }
