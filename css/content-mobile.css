@@ -80,4 +80,8 @@
     .smp-next {
         display: none !important;
     }
+
+    .trend-prev,.trend-next {
+        display: none !important;
+    }
 }

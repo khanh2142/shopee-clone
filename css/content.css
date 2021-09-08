@@ -795,3 +795,147 @@
     word-wrap: break-word;
     overflow: hidden;
 }
+
+/* --------------------- TREND -------------------- */
+
+.trend {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.trend-title {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trend-title h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color : #000;
+    opacity: 0.5;
+}
+
+.trend-title a {
+    color : #ff7c3a;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.trend-title a i {
+    margin-right: 5px;
+    font-size: 0.8rem;
+}
+
+.trend-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    scroll-behavior: smooth;
+}
+
+.trend-container::-webkit-scrollbar {
+    display: none;
+}
+
+.trend-container::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    opacity: 0.2;
+}
+
+.trend-item {
+    width: 240px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    scroll-snap-align: start;
+}
+
+.trend-item::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.1;
+}
+
+.trend-item::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    opacity: 0.2;
+}
+
+.trend-content {
+    width: 140px;
+    height: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.trend-content h4 {
+    text-transform: capitalize;
+    font-size: 1rem;
+    color : #000;
+    font-weight: 400;
+}
+
+.trend-content p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color : #000;
+    opacity: 0.8;
+}
+
+.trend-image {
+    margin-top: 1px;
+    width: 100px;
+    height: 98px;
+}
+
+.trend-prev,.trend-next {
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.trend-prev {
+    top : calc(70% - 1rem);
+    left: 5px;
+}
+
+.trend-next {
+    top : calc(70% - 1rem);
+    right: 5px;
+}
+
+.trend-prev i,.trend-next i {
+    font-size: 2rem;
+    color : #fe6233;
+    opacity: 0.5;
+}
