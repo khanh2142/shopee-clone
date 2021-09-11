@@ -88,4 +88,38 @@
     .top-next,.top-prev {
         display: none !important;
     }
+
+    .suggest-title {
+        width: 50%;
+    }
+
+    .suggest-item {
+        width: 45%;
+    }
+
+    .suggest-image {
+        width: 98%;
+    }
+
+    .suggest-image .product-img{
+        width: 100%;
+
+    }
+
+    .suggest-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .suggest-description {
+        width: 100%;
+    }
+
+    .suggest-info {
+        width: 100%;
+    }
+
+    .suggest-hover {
+        width: calc(100% + 2px);
+    }
 }
