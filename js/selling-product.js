@@ -37,7 +37,7 @@ spContainer.addEventListener('scroll',() => {
 
 
 function random(a,b){
-    return Math.floor(Math.random() * (a-b+1)) + b;
+    return Math.floor(Math.random() * (b-a+1)) + a;
 }
 
 function numberWithCommas(x) {

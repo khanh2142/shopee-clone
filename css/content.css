@@ -927,6 +927,7 @@
 .trend-prev {
     top : calc(70% - 1rem);
     left: 5px;
+    display: none;
 }
 
 .trend-next {
@@ -1185,6 +1186,7 @@
     align-items: center;
     border-radius: 2px;
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
 .suggest-image { 
@@ -1236,22 +1238,33 @@
 .suggest-ticket {
     display: flex;
     height: 16px;
+    padding-top: 2px;
 }
 
 .suggest-svg-first {
-    width: 10px;
+    width: 4px;
     height: 16px;
+    color: #f69113;
 }
 
 .suggest-ticket-price {
     height: 16px;
+    width: 70px;
     background-color: #f69113;
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.suggest-ticket-price span {
+    font-size: 0.7rem;
+    color : #fff;
 }
 
 .suggest-svg-last {
     width: 10px;
     height: 16px;
+    color: #f69113;
 }
 
 .suggest-info {
@@ -1350,4 +1363,52 @@
 
 .suggest-add:hover , .suggest-add:active {
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.suggest-sticker {
+    position: absolute;
+    left: -0.1rem;
+    top: 10px;
+    height: 1rem;
+    background-color: #f25220;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem;
+}
+
+.suggest-sticker::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    border-top: .1875rem solid;
+    border-left: .1875rem solid transparent;
+    display: inline-block;
+    bottom: -.1875rem;
+    filter: brightness(60%);
+}
+
+.suggest-sticker-content {
+    color : #fff;
+    font-size: 0.6rem;
+}
+
+.suggest-support {
+    position: absolute;
+    top: 165px;
+    padding: 0 0.25rem;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+}
+
+.suggest-support p {
+    font-size: 0.7rem;
+    color : #fff;
+    text-transform: capitalize;
+}
+
+.disable1 {
+    display: none;
 }
