@@ -9,10 +9,15 @@ suggestTitle.forEach((item,index) => {
         suggestBar.forEach(bar => {
             bar.classList.remove('active');
         });
+
         suggestBar[index].classList.add('active');
+
+        suggestProduct.innerHTML = "";
+
+        addProduct();
+        
     });
 });
-
 
 const suggestPromotion = [
     "https://cf.shopee.vn/file/d23804e5a1d134511626ca364f439e65", // Freeship Xtra
@@ -140,3 +145,5 @@ addProduct();
 suggestBtn.addEventListener('click',() => {
     addProduct();
 });
+
+

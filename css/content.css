@@ -1412,3 +1412,132 @@
 .disable1 {
     display: none;
 }
+
+/* ----------- DETAIL -------------- */
+
+.detail {
+    position: relative;
+    background-color: #fff;
+}
+
+.detail::before {
+    position: absolute;
+    content: "";
+    top : 0;
+    left: 0;
+    background-color: #ee4d2d;
+    width: 100%;
+    height: 5px;
+}
+
+.shopee-detail {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.shopee-detail::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color :rgba(0, 0, 0, 0.1);
+}
+
+.shopee-detail a {
+    text-decoration: underline;
+    color : #457ad7;
+}
+
+.sd-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.sd-content {
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.sd-category {
+    padding-top: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sd-category h1 {
+    font-size: 1.1rem;
+    color : rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+}
+
+.sd-menu {
+    display: flex;
+    padding-bottom: 100px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.sd-column {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.sdc-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.sdc-list a:hover {
+    color : #ee4d2d;
+}
+
+.sdc-title {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color :rgba(0, 0, 0, 0.6);
+}
+
+.sdc-items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.sdc-item {
+    font-size: 0.7rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    padding-right: 10px;
+}
+
+
+.sdc-item:last-child::after {
+    display: none;
+}
+
+.sdc-item::after {
+    position: absolute;
+    content: "";
+    height: 75%;
+    width: 1px;
+    right: 5px;
+    top: 10%;
+    background-color: rgba(0, 0, 0, 0.2);
+    user-select: none;
+    pointer-events: none;
+}

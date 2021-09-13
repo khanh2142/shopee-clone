@@ -122,4 +122,9 @@
     .suggest-hover {
         width: calc(100% + 2px);
     }
+
+    .shopee-detail {
+        padding-left: 5px;
+        padding-right: 2px;
+    }
 }
