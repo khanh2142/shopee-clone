@@ -81,7 +81,6 @@ const suggestSticker = [
 function addProduct(){
     for (let i = 0;i<18;i++){
 
-        let randomDisable = "disable" + random(0,1);
         let randomImage = random(0,8);
         let randomPromotion = random(0,3);
         let randomSticker = random(0,2);
@@ -92,12 +91,12 @@ function addProduct(){
         item.className = "suggest-item";
         item.innerHTML = `<div class="suggest-image">
         <img src="${suggestProducts[randomImage].image}" alt="" class="product-img">
-        <img class="suggest-promotion ${randomDisable}" src="${suggestPromotion[randomPromotion]}"></img>
+        <img class="suggest-promotion ${"disable" + random(0,1)}" src="${suggestPromotion[randomPromotion]}"></img>
          </div>
          <div class="suggest-content">
         <div class="suggest-description">
             <p>${suggestProducts[randomImage].name}</p>
-            <div class="suggest-ticket ${randomDisable}">
+            <div class="suggest-ticket ${"disable" + random(0,1)}">
                 <svg class="suggest-svg-first">
                     <path d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3" stroke-width="1" transform="" stroke="currentColor" fill="#f69113"> </path>
                 </svg>
@@ -119,14 +118,14 @@ function addProduct(){
             </div>
         </div>
         <div class="suggest-hover">Tìm sản phẩm tương tự</div>
-        <div class="suggest-discount ${randomDisable}">
+        <div class="suggest-discount ${"disable" + random(0,1)}">
             <p>${random(1,99)}%</p>
             <span>GIẢM</span>
         </div>
-        <div class="suggest-sticker ${randomDisable}" style="background-color: ${suggestSticker[randomSticker].color};">
+        <div class="suggest-sticker ${"disable" + random(0,1)}" style="background-color: ${suggestSticker[randomSticker].color};">
             <div class="suggest-sticker-content">${suggestSticker[randomSticker].content}</div>
         </div>
-        <div class="suggest-support ${randomDisable}">
+        <div class="suggest-support ${"disable" + random(0,1)}">
             <p>Tài trợ</p>
         </div>
          </div>`;
