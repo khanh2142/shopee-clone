@@ -127,4 +127,21 @@
         padding-left: 5px;
         padding-right: 2px;
     }
+
+    .sd-category h1{
+        text-align: center;
+    }
+
+    .sd-menu {
+        flex-direction: column;
+    }
+
+    
+    .sd-column {
+        width: 100%;
+        padding-left: 10px;
+    }
+    .sdc-item {
+        display: none;
+    }
 }
