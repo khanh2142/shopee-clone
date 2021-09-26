@@ -266,13 +266,13 @@
   width: 1px;
   height: 20px;
   background-color: rgba(0, 0, 0, 0.2);
-  right: -5px;
+  left: -5px;
   top: 0;
   pointer-events: none;
   user-select: none;
 }
 
-.footer-country a:last-child::before {
+.footer-country a:first-child::before {
   display: none;
 }
 
